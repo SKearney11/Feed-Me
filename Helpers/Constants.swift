@@ -19,6 +19,9 @@ struct ImageName {
     static let Vine = "Vine"
     static let Prize = "Prize"
     static let PrizeMask = "PineappleMask"
+    static let startBtn = "button-restart"
+    static let menuBtn = "button-menu"
+    static let lives = "heart-full"
 }
 
 struct Layer {
@@ -27,6 +30,7 @@ struct Layer {
     static let Vine: CGFloat = 1
     static let Prize: CGFloat = 2
     static let Water: CGFloat = 3
+    static let HUD: CGFloat = 4
 }
 
 struct PhysicsCategory {

@@ -8,10 +8,12 @@ private var splashSoundAction: SKAction!
 private var nomNomSoundAction: SKAction!
 private var levelOver = false
 private var vineCut = false
+var numberOfLives = 3
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
     override func didMove(to view: SKView) {
+        setUpHud()
         levelOver = false
         setUpPhysics()
         setUpScenery()
@@ -19,10 +21,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         setUpVines()
         setUpCrocodile()
         setUpAudio()
-        
     }
     
     //MARK: - Level setup
+    
+    fileprivate func setUpHud(){
+        for i in 1...numberOfLives {
+            var heart: SKSpriteNode!
+            heart = SKSpriteNode(imageNamed: ImageName.lives)
+            heart.anchorPoint = CGPoint(x: 0, y: 0)
+            heart.position = CGPoint(x: CGFloat(i * 60) , y: self.size.height * 0.92)
+            heart.zPosition = Layer.HUD
+            heart.name = ("heart" + String(i))
+            addChild(heart)
+        }
+    }
     
     fileprivate func setUpPhysics() {
         physicsWorld.contactDelegate = self
@@ -156,6 +169,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if prize.position.y <= 0 {
             levelOver = true
             run(splashSoundAction)
+            numberOfLives = numberOfLives - 1
+            if(numberOfLives < 1){
+                let reveal = SKTransition.reveal(with: .down,
+                                                 duration: 1)
+                let newScene = MenuScene(size: CGSize(width: 750, height: 1334))
+                
+                scene?.view?.presentScene(newScene,
+                                          transition: reveal)
+            
+            }
             switchToNewGameWithTransition(SKTransition.fade(withDuration: 1.0))
         }
     }

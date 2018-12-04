@@ -27,8 +27,9 @@
 		D99397D92195AC8C00FB5D4F /* Slice.caf in Resources */ = {isa = PBXBuildFile; fileRef = D99397D02195AC8C00FB5D4F /* Slice.caf */; };
 		D99397DA2195AC8C00FB5D4F /* Splash.caf in Resources */ = {isa = PBXBuildFile; fileRef = D99397D12195AC8C00FB5D4F /* Splash.caf */; };
 		D99397DB2195AC8C00FB5D4F /* Level-01.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99397D32195AC8C00FB5D4F /* Level-01.plist */; };
-		D99397DD2195ACCB00FB5D4F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99397DC2195ACCB00FB5D4F /* Media.xcassets */; };
 		D99397DF2195B06300FB5D4F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99397DE2195B06300FB5D4F /* Constants.swift */; };
+		D9C4866E21B5FE1800588E5F /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C4866D21B5FE1800588E5F /* MenuScene.swift */; };
+		D9D081F421B1957000FA1AE1 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9D081F321B1957000FA1AE1 /* MenuScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +55,9 @@
 		D99397D02195AC8C00FB5D4F /* Slice.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slice.caf; sourceTree = "<group>"; };
 		D99397D12195AC8C00FB5D4F /* Splash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash.caf; sourceTree = "<group>"; };
 		D99397D32195AC8C00FB5D4F /* Level-01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Level-01.plist"; sourceTree = "<group>"; };
-		D99397DC2195ACCB00FB5D4F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../../Downloads/artwork/Media.xcassets; sourceTree = "<group>"; };
 		D99397DE2195B06300FB5D4F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9C4866D21B5FE1800588E5F /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		D9D081F321B1957000FA1AE1 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 				D99397B02195ABD500FB5D4F /* GameScene.sks */,
 				D99397B22195ABD500FB5D4F /* Actions.sks */,
 				D99397B42195ABD500FB5D4F /* GameScene.swift */,
-				D99397DC2195ACCB00FB5D4F /* Media.xcassets */,
+				D9C4866D21B5FE1800588E5F /* MenuScene.swift */,
+				D9D081F321B1957000FA1AE1 /* MenuScene.sks */,
 				D99397B62195ABD500FB5D4F /* GameViewController.swift */,
 				D99397B82195ABD500FB5D4F /* Main.storyboard */,
 				D99397BB2195ABD800FB5D4F /* Assets.xcassets */,
@@ -224,10 +227,10 @@
 				D98A5E6E21A256FE006A6D11 /* Particle@2x.png in Resources */,
 				D99397D82195AC8C00FB5D4F /* NomNom.caf in Resources */,
 				D98A5E6F21A256FE006A6D11 /* Particle@2x 02-26-24-735.png in Resources */,
-				D99397DD2195ACCB00FB5D4F /* Media.xcassets in Resources */,
 				D99397BA2195ABD500FB5D4F /* Main.storyboard in Resources */,
 				D99397D92195AC8C00FB5D4F /* Slice.caf in Resources */,
 				D99397DB2195AC8C00FB5D4F /* Level-01.plist in Resources */,
+				D9D081F421B1957000FA1AE1 /* MenuScene.sks in Resources */,
 				D99397DA2195AC8C00FB5D4F /* Splash.caf in Resources */,
 				D99397B12195ABD500FB5D4F /* GameScene.sks in Resources */,
 				D98A5E6D21A256FE006A6D11 /* Particle 02-26-24-775.sks in Resources */,
@@ -251,6 +254,7 @@
 				D99397B52195ABD500FB5D4F /* GameScene.swift in Sources */,
 				D99397B72195ABD500FB5D4F /* GameViewController.swift in Sources */,
 				D99397AF2195ABD500FB5D4F /* AppDelegate.swift in Sources */,
+				D9C4866E21B5FE1800588E5F /* MenuScene.swift in Sources */,
 				D98A5E7121A2578C006A6D11 /* VineNode.swift in Sources */,
 				D99397DF2195B06300FB5D4F /* Constants.swift in Sources */,
 			);
