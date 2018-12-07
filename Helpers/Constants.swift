@@ -22,6 +22,11 @@ struct ImageName {
     static let startBtn = "button-restart"
     static let menuBtn = "button-menu"
     static let lives = "heart-full"
+    static let optionBtn = "button"
+    static let muteBtn = "button-volume"
+    static let muteBtnOff = "button-volumeOff"
+    static let multiSwipeOn = "multiSwipeOn"
+    static let multiSwipeOff = "multiSwipeOff"
 }
 
 struct Layer {
